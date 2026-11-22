@@ -1,0 +1,17 @@
+# Entorno local (imita lo que Colab trae + lo de requirements.txt)
+-r requirements.txt
+jupyterlab
+ipykernel
+pandas
+numpy
+scipy
+scikit-learn
+lightgbm
+matplotlib
+seaborn
+pyarrow
+duckdb
+plotly
+
+# Opcional: solo para validar el NLP contra un modelo externo (descarga ~1 GB)
+# pip install --index-url https://download.pytorch.org/whl/cpu torch && pip install pysentimiento

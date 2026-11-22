@@ -1,0 +1,22 @@
+# Datos: NUNCA al repo (requisito de la prueba)
+raw/
+datos/
+*.db
+*.zip
+*.jsonl
+*.jsonl.gz
+
+# Lake medallion (derivado de los datos: se regenera con conecta.pipeline)
+lake/
+
+# MLflow local
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Entorno
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.key

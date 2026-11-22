@@ -1,0 +1,31 @@
+texto,sarcasmo,sentimiento,intencion
+"Genial, otra vez se cayó la app justo cuando iba a pagar.",1,negativo,soporte
+"Bravo, tres días sin poder entrar y nadie dice nada.",1,negativo,soporte
+"Qué eficiencia la suya, me volvieron a cobrar doble.",1,negativo,soporte
+"Perfecto, ahora la factura llegó con un aumento que nadie explicó.",1,negativo,soporte
+"Me encanta que la app se congele cada vez que la abro jajaja",1,negativo,soporte
+"Excelente atención, me resolvieron el cobro doble en un día.",0,positivo,soporte
+"Gracias de verdad, ya me devolvieron el dinero del cobro duplicado.",0,positivo,soporte
+"La nueva versión está genial, carga rapidísimo.",0,positivo,soporte
+"Felicitaciones al equipo, la app ya funciona perfecto después del arreglo.",0,positivo,soporte
+"Me encanta el plan Familiar, lo uso todos los días.",0,positivo,soporte
+"La app se cierra cuando intento ver mis facturas.",0,negativo,soporte
+"Me cobraron dos veces la mensualidad de octubre.",0,negativo,soporte
+"No me parece justo el aumento de precio sin previo aviso.",0,negativo,soporte
+"El servicio está lentísimo desde la actualización.",0,negativo,soporte
+"Estoy cansado de reportar lo mismo, si no lo arreglan me cancelo.",0,negativo,amenaza_irse
+"Quiero darme de baja hoy mismo.",0,neutro,cancelar
+"¿Cómo cancelo el servicio?",0,neutro,cancelar
+"Necesito cancelar la suscripción, ya no la uso.",0,neutro,cancelar
+"Quisiera pasarme a un plan más barato.",0,neutro,bajar_plan
+"Me interesa subir de plan para tener más pantallas.",0,neutro,subir_plan
+"¿Cuál es la fecha de corte de mi factura?",0,neutro,soporte
+"Actualicé mis datos de pago, ¿quedó bien registrado?",0,neutro,soporte
+"No me llega el código de verificación al correo.",0,neutro,soporte
+"Hola, quiero saber qué incluye el plan Premium.",0,neutro,soporte
+"Super, ya me llegó el reembolso, mil gracias.",0,positivo,soporte
+"Qué maravilla pagar más por el mismo servicio que antes funcionaba mejor.",1,negativo,soporte
+"Impresionante, la app tarda más en abrir que yo en llegar a casa.",1,negativo,soporte
+"Qué bonito detalle cobrarme la multa por un pago que sí hice.",1,negativo,soporte
+"Muy amable el agente, pero el problema de lentitud sigue igual.",0,negativo,soporte
+"Llevo un mes esperando que me respondan, pésimo.",0,negativo,soporte

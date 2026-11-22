@@ -1,0 +1,25 @@
+texto,sarcasmo,sentimiento,intencion
+"Felicidades, lograron que la app sea más lenta que antes.",1,negativo,soporte
+"Excelente, me llegó una factura con un valor que no corresponde a mi plan.",1,negativo,soporte
+"Qué gran servicio, cuatro días sin poder ver nada.",1,negativo,soporte
+"Me fascina que cada actualización traiga un error nuevo jaja",1,negativo,soporte
+"Increíble cómo me cobran el doble y nadie responde. Bravo.",1,negativo,soporte
+"Genial la idea de subir el precio sin avisar, muy considerados.",1,negativo,soporte
+"Les agradezco muchísimo, ya resolvieron el error de la app.",0,positivo,soporte
+"Excelente servicio, nunca he tenido problemas.",0,positivo,soporte
+"Muy buena la atención por chat, me solucionaron la clave rápido.",0,positivo,soporte
+"La app falla al iniciar sesión en el iPhone.",0,negativo,soporte
+"Me aparece un cobro de 59.900 y mi plan es el Estándar.",0,neutro,soporte
+"No he podido pagar por PSE, sale un error.",0,negativo,soporte
+"Esto es un abuso, tres meses con el mismo problema.",0,negativo,soporte
+"Si siguen subiendo el precio me voy a la competencia.",0,negativo,amenaza_irse
+"Por favor cancelen mi plan a partir del próximo mes.",0,neutro,cancelar
+"Deseo cancelar porque me mudo al exterior.",0,neutro,cancelar
+"¿Puedo cambiarme al plan Básico sin penalidad?",0,neutro,soporte
+"Quiero un plan más económico, el actual no lo alcanzo a pagar.",0,negativo,bajar_plan
+"¿El plan Premium incluye más dispositivos?",0,neutro,soporte
+"Buenas noches, quisiera actualizar mi correo de contacto.",0,neutro,soporte
+"Qué maravilla, por fin arreglaron la app, ya funciona bien.",0,positivo,soporte
+"Súper rápido el nuevo catálogo, muy bien.",0,positivo,soporte
+"La verdad un desastre, la app se congela todo el tiempo.",0,negativo,soporte
+"Muy chévere que me cobren la reconexión sin haberme desconectado.",1,negativo,soporte
