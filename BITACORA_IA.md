@@ -17,8 +17,9 @@ Herramienta principal: Claude (Claude Code).
 | 2026-11-22 | ~12:25 – 12:45 | 0,3 | Storytelling de negocio en HTML (criterios del curso de visualización) y guía privada de sustentación |
 | 2026-11-22 | ~12:45 – 13:00 | 0,3 | Análisis de frecuencia de actualización del modelo, estado final y cierre del repositorio |
 | 2026-11-22 | ~13:00 – 13:20 | 0,3 | Revisión de confidencialidad: retirar textos de tickets y filas de datos, y limpiar el historial público |
+| 2026-11-22 | ~13:20 – 13:30 | 0,2 | Ajustes de la guía de sustentación y prueba de Elastic Net frente a Ridge y Lasso |
 
-**Total aproximado: 3,7 horas.**
+**Total aproximado: 3,9 horas.**
 
 ## Momentos importantes
 
@@ -111,4 +112,10 @@ Herramienta principal: Claude (Claude Code).
 - **Qué se cambió:** paráfrasis propias en lugar de citas (MEMO, README, documentos, storytelling y comentarios de código); notebooks auxiliares que muestran huellas y conteos en lugar de textos y filas. En `solucion.ipynb`, la celda de ejemplos de sarcasmo pasó a un resumen por categoría. Su salida se generó localmente con el nuevo código y es idéntica en lo verificable a la de Colab (mismo total: 974 tickets sarcásticos), porque el NLP es determinista. El resto de las salidas siguen siendo las de Colab.
 - **Resultado:** el escáner da 0 coincidencias en los 35 archivos.
 - **Historial:** las versiones anteriores seguían visibles en el historial público. Decidí dejar un solo commit limpio y recrear el repositorio, porque GitHub mantiene accesibles por enlace directo los commits que ya no pertenecen a ninguna rama. El historial antiguo quedó respaldado solo en mi equipo.
+
+### 15. Ridge, Lasso y Elastic Net
+- **Qué pregunté:** por qué no se usaron Ridge, Lasso y Elastic Net.
+- **Qué aclaró la IA:** Ridge (L2) y Lasso (L1) sí estaban, como regresión logística penalizada; faltaba Elastic Net.
+- **Qué se probó:** las tres con el mismo protocolo (dos pliegues temporales, calibración, valor neto) en `conecta/experimento_elasticnet.py`. Elastic Net con 25 % de L1 llegó a 35,2 % del máximo, frente a 34,2 % de Lasso y 34,1 % de Ridge; el ensamble elegido sigue arriba (36,5 %).
+- **Qué decidí:** mantener Lasso. La ventaja de Elastic Net es pequeña, está inflada porque elegí la mejor de tres mezclas mirando la validación, y agrega un hiperparámetro que no conviene afinar con dos pliegues.
 

@@ -1,7 +1,7 @@
 # Estado del proyecto vs. enunciado
 
-**Estado: terminado y entregable.** Última actualización: 2026-11-22, ~13:20.
-**Tiempo invertido:** 3,7 horas (detalle por sesión en `BITACORA_IA.md`).
+**Estado: terminado y entregable.** Última actualización: 2026-11-22, ~13:30.
+**Tiempo invertido:** 3,9 horas (detalle por sesión en `BITACORA_IA.md`).
 Fuente de requisitos: `raw/Enunciado - Prueba técnica Ciencia de Datos.pdf` (revisado completo).
 
 Leyenda: ✅ hecho · ➖ opcional, no incluido
@@ -35,7 +35,7 @@ Leyenda: ✅ hecho · ➖ opcional, no incluido
 | `requirements.txt` (solo lo que Colab no trae) | ✅ | `mlflow` |
 | `predicciones.csv` | ✅ | Generado en Colab: 1.558 filas, 522 a contactar, validado |
 | `MEMO.md` (1 página, no técnica) | ✅ | |
-| `BITACORA_IA.md` (uso de IA + horas) | ✅ | 3,7 h |
+| `BITACORA_IA.md` (uso de IA + horas) | ✅ | 3,9 h |
 | Repo público en GitHub | ✅ | https://github.com/adrianfelipe812/prueba-conecta · auditado: sin datos ni textos de clientes, sin rutas personales; un solo commit (repositorio recreado para eliminar versiones anteriores) |
 | `storytelling.html` (adicional) | ✅ | Historia de negocio interactiva en 3 actos con simulador |
 
@@ -55,6 +55,7 @@ Leyenda: ✅ hecho · ➖ opcional, no incluido
 - ✅ Etiquetas NLP de referencia revisadas y confirmadas.
 - ✅ Cortes adicionales evaluados: no se usan (anotación).
 - ✅ Criterio de selección = costo de la decisión; modelo = ensamble logística L1 + Random Forest 50/50.
+- ✅ Regularización: Ridge, Lasso y Elastic Net empatan; se mantiene Lasso (`experimento_elasticnet.py`).
 - ✅ No recontactar a quien ya recibió una oferta (costo medido y documentado).
 - ✅ Hallazgo abierto: Android 5.4.0.
 - ✅ Frecuencia: reentrenar trimestral (o por alarma), puntuar mensual.
@@ -73,5 +74,6 @@ cd prueba-conecta
 .venv/Scripts/python.exe -m conecta.pipeline                # bronze → silver → gold → calidad
 .venv/Scripts/python.exe -m conecta.storytelling            # regenera storytelling.html
 .venv/Scripts/python.exe -m conecta.experimento_frecuencia  # simulación de frecuencia de actualización
+.venv/Scripts/python.exe -m conecta.experimento_elasticnet   # Ridge vs Lasso vs Elastic Net
 .venv/Scripts/mlflow.exe ui --backend-store-uri sqlite:///mlflow.db
 ```
